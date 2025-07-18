@@ -1,0 +1,19 @@
+/* NetworkPro.css */
+body { margin: 0; padding: 0; }
+#navigationBar ul { padding-left: 5em;
+		padding: 0; margin: 0;
+		list-style-type: none; }
+#navigationBar li { display: inline; padding-left: 1em;
+		margin-left: 1em; border-left: 1px
+		solid black; }
+#navigationBar:first-child {
+		padding-left: 0; border-left: none;
+		marging-left: 0; }
+
+/* This is what positions the sidebar */
+#main { padding: 0 2em 2em 12em; }
+#content { float:left; }
+#sidebar { float:left; width: 10em;
+	position: relative; right: 11em; top: 1em;
+	 margin-left: -100%; }
+#sidebar ul { marging: 0 0 1em 0; }

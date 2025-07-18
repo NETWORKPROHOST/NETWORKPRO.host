@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="Western Eurpean (ISO)">
+<title>NetworkPro</title>
+<meta name="viewport" content-"width=device-width">
+<style type="text/css">
+
+body	{ font-family: Optima, sans-serif; 
+	margin: 0; padding: 0;
+	background-color: silver; }
+a:link 	{ color: #055; }
+a:visited { color: #404; }
+
+header 	{ text-align:center;
+	background-color: #055; color:white; }
+header h1, header h2
+	{ margin: 0; }
+header h1 { color: #FFFF00; font-size: 250%; }
+
+
+#main 	{ background-color: #055;
+	padding: 0 12em 2em 2em;
+	position: relative; }
+#content { z-index: 0; background-color: white; padding: 1em 5em; }
+#content h3{ margin-top: 0; }
+#content p { font-size: 90%; line-weight: 1.4; }
+#sidebar { position: absolute; width: 10em;
+	right: 1em; top: 1em; }
+#sidebar h3 { font-size: 100%; color: white; margin: 0;
+	font-weight: normal; padding: 0 0.125em 0.25em;
+	background-color: #404; }
+#sidebar ul { margin: 0 0 1em 0;
+	background-color: white;
+	border: 2px solid #404;
+	border-top: 0;
+	padding: 0.125em 0.25em; }
+#sidebar li { font-size: 85%;
+	display: block; padding: 0.125em 0; }
+#sidebar li a:link, #sidebar li a:visited
+	{ text-decoration: none; color: #055; }
+#sidebar li a:hover { color: #404; }
+
+
+footer { background-color: #404; color:white;
+	padding: 0.5em 5em; }
+footer p { margin: 0em; font-size: 85%; }
+footer p a:link, footer p a:visited 
+	{ color: #DDDD00; }
+
+#navigationBar { z-index: 1;
+	clear: both;
+	position:relative;
+	margin-left: 5em;
+	padding: 0;
+	height: 30px;
+	width: 60%; }
+#navigationBar ul { 
+	margin: 0; 
+	padding: 0;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	list-style-type: none;
+	background-color: #eeeeee;
+	overflow: visible; }
+#navigationBar ul > li {
+	display: block;
+	z-index: 2;
+	padding-left: 1em;
+	float: left;
+	height: auto;
+	/* menu header's items width */
+	width: 120px;
+	}
+#navigationBar li > a {
+	display: block;
+	padding: 0 0 0 5px;
+	height: 100%;
+	width: 109px;
+	border-right: 1px black solid;
+	line-height: 30px;
+	font-family: Verdana;
+	font-size: 17px;
+	text-decoration: none;
+	background-color: #eeeeee;
+	color: #5d5636;
+	}
+#navigationBar ul ul {
+	margin-top: 2px;
+	display: none;
+	z-index: 3;
+	position: static;
+	height: auto;
+	width: 200px;
+	border: 1px #666666 solid;
+	background-color: #dddddd;
+	}
+#navigationBar ul ul li {
+	position: relative;
+	float: none;
+	z-index: 4;
+	display: block;
+	height: 28px;	
+	width: 100%;
+	border: none;
+	}
+#navigationBar ul ul li > a {
+	height: 100%;
+	width: 96%;
+	padding: 0 0 0 4%;
+	line-height: 28px;
+	background-color: transparent;
+	border: none;
+	color: #000000;
+	font-size: 12px;
+	font-style: normal;
+	}
+#navigationBar li:hover > a {
+	color: #220000;
+	background-color: #eeeabe;
+	}
+#navigationBar li:hover > ul {
+	display: block; 
+	}
+
+
+</style>	 			
+</head>
+<body>
+<link rel="stylesheet" href="..\..\CSS\NetworkPro.css" type="text/css">
+<header>
+<h1 align="center">Network Pro</h1>
+<hr align="center"></hr>
+
+<nav id="navigationBar">
+	<ul>
+		<li><a href="\Claudius.html">Home</a></li>
+		<li style="color:black;">Products
+			<ul>
+				<li><a href="Downloads\Pkg.html">Al Users</a></li>
+			</ul>
+		</li>
+		<li style="color:black;">About
+			<ul>
+				<li><a href="\motor.html">History</a></li>
+				<li><a href="\tulips.html">The Team</a></li>
+			</ul>
+		</li>
+		<li><a href="..\Site\HTML\Donations.html">Donations</a></li>
+		<li><a href="..\Site\HTML\Contact.html">Contact</a></li>
+	</ul>
+
+</nav>
+</header>
+<div id="main">
+<article id="content">
+<h3> Welcome to NetworkPro</h3>
+<p>NetworkPro is formed aiming at providing network
+which can't get interupted. Its Al Users backed network provides 
+better secure network connections. These users are capable 
+of offering secure network which doesn't needs to be resolved in case of breakdown.
+Our objective is to provide you better performing assets.
+</article>
+</p>
+<aside id="sidebar">
+	<h3>Artificial Learning Users</h3>
+	<ul>
+		<li><a href="Downloads\Pkg.html">Al Users</a></li>
+	</ul>
+	<h3>NetworkPro Projects</h3>
+	<ul>
+		<li><a href="/WifiNetwork">Wi-Fi Network</a></li>
+		<li><a href="/WifiNetwork">Customized Laptops</a></li>
+	</ul>
+	
+</aside>
+<footer>
+	<p id="note501">The Network Pro is a Micro Enterprise,
+	Registered. Your Expertise is welcomed by NetworkPro.
+	<a href="mailto:ashishsharma@outlook.com">Mail to reach</a>
+	</p>
+</footer> <!-- footer -->
+</div> <!-- main -->
+</body>
+</html>
