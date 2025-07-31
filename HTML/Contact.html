@@ -5,12 +5,55 @@
 <title>Contact Us</title>
 <meta name="viewport" content-"width=device-width">
 <style type="text/css" media="screen">
+header 	{ text-align:left;
+	background-color: #055; color:white; }
+header h1 { margin: 0; }
+header h1 { color: #FFFF00; font-size: 250%; }
+
+
+#main 	{ background-color: #055;
+	padding: 0 12em 2em 0;
+	position: relative; }
+#address { z-index: 0; background-color: white; padding: 1em 5em; }
+
+
+#sidebar { position: absolute; width: 10em;
+	right: 1em; top: 5em; }
+#sidebar h3 { font-size: 100%; color: white; margin: 0;
+	font-weight: normal; padding: 0 0.125em 0.25em;
+	background-color: #404; }
+#sidebar ul { margin: 0 0 1em 0;
+	background-color: white;
+	border: 2px solid #404;
+	border-top: 0;
+	padding: 0.125em 0.25em; }
+#sidebar li { font-size: 85%;
+	display: block; padding: 0.125em 0; }
+#sidebar li a:link, #sidebar li a:visited
+	{ text-decoration: none; color: #055; }
+#sidebar li a:hover { color: #404; }
+
+
+footer { background-color: #404; color:white;
+	padding: 0.5em 5em; }
+footer p { margin: 0em; font-size: 85%; }
+footer p a:link, footer p a:visited 
+	{ color: #DDDD00; }
+
+
+a:visited { color: purple;  }
+a:hover { color: red;}
+
+
 .outer { padding: 20px;
 	 margin: 40px;
+	 background-color: white;
 	}
 .address {
+	z-index: 0;
+	background-color: white;
+	padding: 1em 5em; 
 	border: 3px solid black;
-	padding: 15px;
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
@@ -24,9 +67,11 @@
 </style>
 </head>
 <body style="background-color:#aaaaaa; font-family: Verdana;">
+<header>
 <h1>Contact Us</h1>
-<hr align="left" width="85%";>
-<div class="outer">
+<hr align="left";></hr>
+</header>
+<div id="main">
 
 <address class="address">
 	<strong>Date of Incorporation: </strong>30/10/2024,<br>
@@ -41,6 +86,22 @@
 	<a href="SMS:+919418024872">+919418024872</a>
 </address>
 </div>
-<p align="center"><a href="..\index.html">Home Page</p>
+<aside id="sidebar">
+	<h3>Artificial Learning Users</h3>
+	<ul>
+		<li><a href="Downloads\Pkg.html">Al Users</a></li>
+	</ul>
+	<h3>NetworkPro Projects</h3>
+	<ul>
+		<li><a href="Downloads\Pkg.html">Al Users</a></li>
+		<li><a href="HTML\Cred Manager.html">Credential Manager</a></li>
+	</ul>
+	
+</aside>
+<footer>
+	<p align="center"><a href="..\index.html">Home Page</a>    <a href="Donations.html">Donations</a>    <a href="Contact.html">Contact</a></p>
+
+</footer> <!-- footer -->
+</div>
 </body>
 </html>
