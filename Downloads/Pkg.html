@@ -5,6 +5,46 @@
 <title>Pkgs & Dirs</title>
 <meta name="viewport" content-"width=device-width">
 <style type="text/css">
+header 	{ text-align:left;
+	background-color: #055; color:white; }
+header h1 { margin: 0; }
+header h1 { color: #FFFF00; font-size: 250%; }
+
+
+#main 	{ background-color: #055;
+	padding: 0 12em 2em 2em;
+	position: relative; }
+#content { z-index: 0; background-color: white; padding: 1em 5em; }
+#content h3{ margin-top: 1em; }
+#content p { font-size: 90%; line-weight: 1.4; }
+
+#sidebar { position: absolute; width: 10em;
+	right: 1em; top: 1em; }
+#sidebar h3 { font-size: 100%; color: white; margin: 0;
+	font-weight: normal; padding: 0 0.125em 0.25em;
+	background-color: #404; }
+#sidebar ul { margin: 0 0 1em 0;
+	background-color: white;
+	border: 2px solid #404;
+	border-top: 0;
+	padding: 0.125em 0.25em; }
+#sidebar li { font-size: 85%;
+	display: block; padding: 0.125em 0; }
+#sidebar li a:link, #sidebar li a:visited
+	{ text-decoration: none; color: #055; }
+#sidebar li a:hover { color: #404; }
+
+
+footer { background-color: #404; color:white;
+	padding: 0.5em 5em; }
+footer p { margin: 0em; font-size: 85%; }
+footer p a:link, footer p a:visited 
+	{ color: #DDDD00; }
+
+
+a:visited { color: purple;  }
+a:hover { color: red;}
+
 body { background-color: silver; }
 #one {
 position: relative;
@@ -14,8 +54,6 @@ width: 50%;
 padding: 15px;
 background-color: #aaaaaa;
 }
-a:visited { color: purple;  }
-a:hover { color: red;}
 #S-1-5-1000_Classes:hover #classes {
 width: 35px;
 height: 35px;
@@ -35,10 +73,13 @@ left: 500px; }
 </script>	
 </head>
 <body>
+<header>
 <h1>Network Pro</h1>
-<hr> 
-<p id ="one">
-Herewith are the Network Pro's Network User package, registries. These are the
+<hr> </hr>
+</header>
+<div id="main">
+<article id="content">
+<p>Herewith are the Network Pro's Network User package, registries. These are the
 fully automatic controlled registry files which can run the computer and alongwith
 provide restricted access to connections. 
 These are particularly introduced for use in pecular cases
@@ -59,9 +100,25 @@ all kinds of accesses.</p></dd>
 <a href="Downloads.alz" download>S-1-5-21-1000_Classes.reg<img src="bottom.png" id= "classes" height=30px; width=30px; alt="download"></a>
 </div>
 </dl>
-<br>
-<br>
-<p class ="center" align="center"><a href="..\index.html">Home Page</p>
+</article>
+
+<aside id="sidebar">
+	<h3>Artificial Learning Users</h3>
+	<ul>
+		<li><a href="Downloads\Pkg.html">Al Users</a></li>
+	</ul>
+	<h3>NetworkPro Projects</h3>
+	<ul>
+		<li><a href="Downloads\Pkg.html">Al Users</a></li>
+		<li><a href="HTML\Cred Manager.html">Credential Manager</a></li>
+	</ul>
+	
+</aside>
+<footer>
+	<p align="center"><a href="..\index.html">Home Page</a>    <a href="Donations.html">Donations</a>    <a href="Contact.html">Contact</a></p>
+
+</footer> <!-- footer -->
+</div>
 <script src="..\JS\jquery-3.7.1.min.js"></script>
 <script src="..\JS\S-1-5.js"></script>
 </body>

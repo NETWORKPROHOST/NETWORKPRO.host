@@ -5,8 +5,22 @@
 <title>RSA256</title>
 <meta name="viewport" content-"width=device-width">
 <style type="text/css">
+
+header 	{ text-align:left;
+	background-color: #055; color:white; }
+header h1 { margin: 0; }
+header h1 { color: #FFFF00; font-size: 250%; }
+
+
+#main 	{ background-color: #055;
+	padding: 0 12em 2em 2em;
+	position: relative; }
+#content { z-index: 0; background-color: white; padding: 1em 5em; }
+#content h3{ margin-top: 1em; }
+#content p { font-size: 90%; line-weight: 1.4; }
+
 #sidebar { position: absolute; width: 10em;
-	right: 1em; top: 5em; }
+	right: 1em; top: 1em; }
 #sidebar h3 { font-size: 100%; color: white; margin: 0;
 	font-weight: normal; padding: 0 0.125em 0.25em;
 	background-color: #404; }
@@ -45,9 +59,13 @@ height: 35px;
 
 </style>
 </head>
-<body style=" background-color: #aaaaaa;">
+<body style="background-color: #aaaaaa;">
+<header>
 <h1 style=" color: yellow;">Network Pro</h1>
 <hr align="center"></hr>
+</header>
+<div id="main">
+<article id="content">
 <h3> RSA 256</h3>
 <p>
 Herein, we are providing Remote Server Access 256 bit<br>
@@ -58,10 +76,12 @@ with 32byte bandwidth.<br>
 As in case above it can also be used to decrypt<br>
 crypted data with 256 bit bandwidth. <br>
 To download the Certificate press here:<br>
+</p>
+
 <div id="Cert">
 <a href="..\CertRSA256\CertRSA256.alz" download>CertRSA256<img src="..\Downloads\bottom.png" id= "img" height=30px; width=30px; alt="download"></a>
 </div>
-</p>
+</article>
 <aside id="sidebar">
 	<h3>Artificial Learning Users</h3>
 	<ul>
@@ -69,7 +89,6 @@ To download the Certificate press here:<br>
 	</ul>
 	<h3>NetworkPro Projects</h3>
 	<ul>
-		<li><a href="/WifiNetwork">Wi-Fi Network</a></li>
 		<li><a href="Downloads\Pkg.html">Al Users</a></li>
 		<li><a href="HTML\Cred Manager.html">Credential Manager</a></li>
 	</ul>
@@ -79,6 +98,6 @@ To download the Certificate press here:<br>
 	<p align="center"><a href="..\index.html">Home Page</a>    <a href="Donations.html">Donations</a>    <a href="Contact.html">Contact</a></p>
 
 </footer> <!-- footer -->
-
+</div>
 </body>
 </html>
