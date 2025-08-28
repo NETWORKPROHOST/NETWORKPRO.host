@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>E-mail Form</title>
+<style type="text/css">
+input.feedback {
+font: bold italic;
+}
+</style>
+</head>
+<body>
+<h1 style="color: #060;">Network Pro</h1>
+<hr align="center"> </hr>
+
+<form action="mailto:ashishsharma248@outlook.com" method="POST">
+
+<p><label for="formtype"><strong> Form type:</strong></label>
+	<input type="text" class="feedback" value="Feedback Form" readonly>
+</p>
+<p><strong>Name:</strong><br />
+<input type="text" size="25" name="name" /></p>
+<p><strong>E-Mail Address:</strong><br />
+<input type="text" size="25" name="email" /></p>
+<p><strong>Message:</strong><br />
+<textarea name="message" cols="30" rows="5"></textarea></p>
+<p><input type="submit" value="send" /></p>
+</form>
+</body>
+</html>
