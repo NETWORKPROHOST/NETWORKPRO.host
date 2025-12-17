@@ -24,11 +24,18 @@ body	{ font-family: Optima, sans-serif;
 a:link 	{ color: #055; }
 a:visited { color: #404; }
 
-header 	{ text-align:center;
-	background-color: #055; color:white; }
+header 	{ position: relative;
+	background-color: #055; color: white; }
 header h1, header h2
-	{ margin: 0; }
-header h1 { color: #FFFF00; font-size: 250%; }
+	{ margin:0;
+	left: 15%; }
+header h1 { color: #FFFF00; font-size: 250%;
+	 	left: 40%;
+		position: absolute; }
+
+img.logo { 	padding: 5px;
+		float: left; }
+
 
 
 #main 	{ background-color: #055;
@@ -144,10 +151,10 @@ footer p a:link, footer p a:visited
 </style>	 			
 </head>
 <body>
-<link rel="stylesheet" href="..\..\CSS\NetworkPro.css" type="text/css">
+<link rel="stylesheet" href="CSS\NetworkPro.css" type="text/css">
 <header>
-<h1 align="center">Network Pro</h1>
-<hr align="center"></hr>
+<img src="images\NetworkPro.png" alt="logo"  class="logo"><h1>Network Pro</h1>
+
 
 <nav id="navigationBar">
 	<ul>
