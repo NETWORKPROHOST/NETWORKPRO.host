@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Search Google</title>
+<head>
+<script>
+"use strict";
+let win2, timer;
+
+function display(str) {
+	let e = document.getElementById("para");
+	e.innerHTML = str;
+}
+function google(str) {
+	console.log(window);
+	win2 = window.location = 
+	"https://google.com" + "?q="+ str;
+	}
+function googleIt() {
+	display("Going to Google in 5 seconds.");
+	let term = document.getElementById("search").value;
+	timer =setTimeout(google, 5000, term);
+}
+function cancel() {
+	display("");
+	clearTimeOut(timer);
+}
+
+</script>
+<body style="padding: 10px;">
+<script>
+document.body.style.backgroundColor= "#EEEEEE";
+document.body.style.border= "thick solid #0000ff";
+document.body.style.fontFamily ="Courier New, Impact";
+
+</script>
+<button onclick="googleIt()">Google</button>
+<input type="text" id="search">
+<button onclick="cancel()">Cancel</button>
+<p id="para"> Type in the <b>space</b> above to search anything on google.</p>
+</body>
+</html>
