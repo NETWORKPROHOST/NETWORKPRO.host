@@ -62,14 +62,22 @@ width: 35px;
 height: 35px;
 }
 span { background-color: #aaaaaa; border: 2px solid black; padding: 5px; }
-
+</style>
+<script>
+"use strict";
+let win2;
+function sub() {
+console.log(window);
+win2 = window.location("https://www.paypal.com/ncp/payment/T7D9RBVGBD7Q2");
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2044392458395607"
 
 
      crossorigin="anonymous">
 </script>
 
-</style>
+
 </head>
 <body style="background-color: #aaaaaa;">
 <header>
@@ -78,7 +86,7 @@ span { background-color: #aaaaaa; border: 2px solid black; padding: 5px; }
 </header>
 <div id="main">
 <article id="content">
-<h3><img src="..\images\logo.png">Microsoft Office Starter</h3>
+<h3><img src="..\images\CaptureMSOffice.PNG">Microsoft Office Starter</h3>
 <p>
 Microsoft Office Starter is the updated version<br>
 of MS Office 2007. Its features are well equipped <br>
@@ -92,7 +100,7 @@ To download the MS Office press here:<br>
 </p>
 
 <div id="MSOffice">
-<a href="https://www.paypal.com/ncp/payment/T7D9RBVGBD7Q2" download><h4><span id="box">Pay & Download</span></h4></a>
+<button onclick="sub()">Pay & Download</button>
 </div>
 </article>
 <aside id="sidebar">
