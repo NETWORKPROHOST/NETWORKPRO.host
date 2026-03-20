@@ -51,14 +51,22 @@ width: 35px;
 height: 35px;
 }
 span { background-color: #aaaaaa; border: 2px solid black; padding: 5px; }
-
+</style>
+<script>
+"use strict";
+let win2;
+function sub() {
+console.log(window);
+win2=window.location("https://www.paypal.com/ncp/payment/JYNVEJCW4SXMJ");
+}
+</script>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2044392458395607"
 
 
      crossorigin="anonymous">
 </script>
 
-</style>
+
 </head>
 <body style="background-color: #aaaaaa;">
 <header>
@@ -80,7 +88,7 @@ To download the Certificate press here:<br>
 </p>
 
 <div id="cert">
-<a href="https://www.paypal.com/ncp/payment/JYNVEJCW4SXMJ"><h4><span id="box">Pay & Download CertRSA256</span></h4></a>
+<button onclick="sub()">Pay & Download</button>
 </div>
 </article>
 <aside id="sidebar">
