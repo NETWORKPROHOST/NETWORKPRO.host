@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-<title>Manifestation</title>
+<title>Speak my Manifestation</title>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<style type="text/css">
+@media (min-width: 400px) {
+#main {
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 2;
+	}
+aside {
+ 	-webkit-column-break-before: always;
+	break-before: always;
+	}
+}
+</style>
 <script>
 function speakText() {
 	for(i=0; i<7; i++) { function text() {
@@ -31,8 +46,27 @@ function speakText() {
 </head>
 <body>
 <link rel="stylesheet" href="Speak.css" type="text/css">
+<header>
+<h1>Network Pro</h1>
+<nav id="sitenav">
+<ul>
+		<li><a href="..\Downloads\PkgPay.html">Al Users</a></li>
+	</ul>
+<ul>
+		<li><a href="..\HTML\MSOfficePay.html">MS Office Starter</a></li>
+		<li><a href="..\HTML\GoogleWindow1.html">Search Engine</a></li>
+		<li><a href="CertRSAPay.html">Cert RSA</a></li>
+		<li><a href="..\HTML\CredManagerPay.html">Credential Manager</a></li>
+		<li><a href="..\Drivers\Drivers.html">Drivers</a></li>		
+
+	</ul>
+</nav> <!--sitenav -->
+</header>
+<div id="main">
+<article id ="content">
 <h2>Mainfestation</h2>
 <hr>
+
 <div>
 <label id="l1" for="username">My name is</label>
 <input id="f1"/><br/>
@@ -48,5 +82,41 @@ function speakText() {
 <div class="submit">
 <button onclick="speakText()">Cast Spell</button>
 </div>
+
+</article>
+<aside id="sidebar">
+	<h3>Artificial Learning Users</h3>
+	<ul>
+		<li><a href="..\Downloads\PkgPay.html">Al Users</a></li>
+	</ul>
+	<h3>NetworkPro Projects</h3>
+	<ul>
+		<li><a href="..\Downloads\PkgPay.html">Al Users</a></li>
+		<li><a href="..\HTML\MSOfficePay.html">MS Office Starter</a></li>
+		<li><a href="..\HTML\GoogleWindow1.html">Search Engine</a></li>
+		<li><a href="CertRSAPay.html">Cert RSA</a></li>
+		<li><a href="..\HTML\CredManagerPay.html">Credential Manager</a></li>
+		<li><a href="..\HTML\Speaks.html">Manifestation</a></li>
+		<li><a href="..\Drivers\Drivers.html">Drivers</a></li>		
+
+	</ul>
+	
+	<h3>Contact Us</h3>
+	<ul>
+		<li><a href="ContactUs\Contact.html">Contact Us</a></li>
+		<li><a href="ContactUs\feedback.html">Feedback</a></li>
+	</ul>
+	
+</aside>
+</div> <! --main-- >
+<footer>
+	<p id="copyright">Copyright &copy; 2024 by the Network Pro.
+	Questions? <a href="mailto:ashishsharma248@outlook.com">
+	Mail the NetworkPro</a></p>
+	<p align="center"><a href="..\index.html">Home Page</a>    
+	    <a href="ContactUs\Contact.html">Contact</a></p>
+
+</footer> <!-- footer -->
+
 </body>
 </html>
