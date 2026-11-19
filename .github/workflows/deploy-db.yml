@@ -1,10 +1,12 @@
 yaml
 name: Sync MySQL on VPS
+
 on:
   push:
-    branches: [ main ]
-  path:
-    - '**.sql'
+    branches:
+      - main
+    paths:
+      - '**.sql'
 
 jobs:
   deploy:
@@ -17,6 +19,7 @@ jobs:
           username: ${{ secrets.VPS_USER }}
           key: ${{ secrets.VPS_SSH_KEY }}
           script: |
+            set -e
             cd /var/www/html/networkpro.host
             git pull origin main
-            mysql -u your_mysql_user -p'${{ secrets.DB_PASSWORD }}' your_database_name < /home/user/Documents/NetworkPro/GitHub/authorization.sql
+            mysql -u "${{ secrets.DB_USER }}" -p"${{ secrets.DB_PASSWORD }}" "${{ secrets.DB_NAME }}" < /var/www/html/networkpro.host/authorization.sql
