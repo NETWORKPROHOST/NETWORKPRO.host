@@ -1,12 +1,29 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 //check for required fields from the form
 if ((!isset($_POST["username"])) || (!isset($_POST["password"])) || (!isset($_POST["useremail"]))) {
 	header("Location: userlogin.php");
 	exit;
 }
+// Initialize $display_block so appending (.=) doesn't cause a warning
+$display_block = "";
 
 // connect to server and select database
 $mysqli = mysqli_connect("localhost", "root", "H@1amirpur", "authorization");
+
+/*$insert_sql = "INSERT INTO logincred (username, email, password) VALUES 
+		('".$_POST["username"]."', '".$_POST["useremail"]."',
+		sha2('".$_POST["password"]."', 256))";
+$insert_res = mysqli_query($mysqli, $insert_sql)
+		or die(mysqli_error($mysqli));
+
+if(mysqli_affected_rows($mysqli) < 1) {
+	// there are no record
+	$display_block = "<p><em>No record recorded.</em></p>";
+	}
+*/
 
 // create and issue the query
 $sql = "SELECT f_name, l_name FROM auth_users WHERE 
@@ -23,15 +40,18 @@ if (mysqli_num_rows($result) == 1) {
 		$l_name = stripslashes($info['l_name']);
 		}
 	// set authorization
-	setcookie("auth", "1", 0, "/", "", 0);
+	setcookie("auth", "0", 0, "/", "", 0);
 	
 	// create display string
-	$display_block = "
+	$display_block .= "
 	<p>".$f_name." ".$l_name." is authorized!</p>
 	<p>Authorized Users' Menu:</p>
 	<ul>
 	<li><a href =\"secretpage.php\">Investor Page</a></li>
 	</ul>";
+
+	// close connection to MYsql
+	mysqli_close($mysqli);
 } else {
 	// redirect back to login form if not authorized
 	header("Location: userlogin.html");

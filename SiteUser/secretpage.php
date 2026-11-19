@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 // 1. Run authentication BEFORE any HTML is output
-if (isset($_COOKIE["auth"]) && $_COOKIE["auth"] === "1") {
+if (isset($_COOKIE["auth"]) && $_COOKIE["auth"] === "0") {
     $display_block = "<p>You are an authorized user.</p>";
 } else {
     header("Location: userlogin.html");

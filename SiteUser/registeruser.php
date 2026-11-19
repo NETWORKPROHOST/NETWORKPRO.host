@@ -1,4 +1,7 @@
 <?php
+// Enable error reporting temporarily for debugging (remove in production)
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
 
 // connect to server and select database
 $mysqli = mysqli_connect("localhost", "root", "H@1amirpur", "authorization");
@@ -31,7 +34,7 @@ if (!$_POST) {
 	} else {	
 
 // create and issue the query
-$add_sql = "INSERT INTO auth_users (f_name, l_name, email, username, Password) VALUES ('".$_POST["f_name"]."','".$_POST["l_name"]."','".$_POST["username"]."','".$_POST["email"]."',sha2('".$_POST["password"]."', 256))";
+$add_sql = "INSERT INTO auth_users (f_name, l_name, email, username, password) VALUES ('".$_POST["f_name"]."','".$_POST["l_name"]."','".$_POST["email"]."','".$_POST["username"]."',sha2('".$_POST["password"]."', 256))";
 $add_result = mysqli_query($mysqli, $add_sql) or die(mysqli_error($mysqli));
 
 	
